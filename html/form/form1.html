@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Payment Form</title>
+</head>
+<body>
+	<h1>Payment Form</h1>
+	<p>Required fields are followed by <strong><abbr title="required">*</abbr></strong></p>
+	<section>
+		<h2>Contact information</h2>
+		<fieldset>
+			<legend>Title</legend>
+			<p>
+				<input type="radio" name="title" id="title1" value="M.">
+				<label for="title1">Mister</label>
+			</p>
+			<p>
+				<input type="radio" name="title" id="title2" value="Ms.">
+				<label for="title2">Miss</label>
+			</p>
+		</fieldset>
+		<p>
+			<label for="name">Name:<abbr title="required">*</abbr></label>
+			<input type="text" name="user_name" id="name">
+		</p>
+		<p>
+			<label for="mail">Email:<abbr title="required">*</abbr></label>
+			<input type="email" name="user_mail" id="mail">
+		</p>
+		<p>
+			<label for="password">Password:<abbr title="required">*</abbr></label>
+			<input type="password" name="user_password" id="password">
+		</p>
+	</section>
+	<section>
+		<h2>Payment information</h2>
+		<p>
+			<label for="card">Card type:</label>
+			<select>
+				<option value="visa">Visa</option>
+				<option value="mc">MasterCard</option>
+				<option value="amex">American Express</option>
+			</select>
+		</p>
+		<p>
+			<label for="number">Card number:<abbr title="required">*</abbr></label>
+			<input type="text" name="cardnumber" id="number">
+		</p>
+		<p>
+			<label for="date">Expiration Date:<abbr title="required">*</abbr><em>formatted as mm/yy</em></label>
+			<input type="text" name="expiration" id="date">
+		</p>
+	</section>
+	<p><button type="submit">Validate the payment</button></p>
+</body>
+</html>
